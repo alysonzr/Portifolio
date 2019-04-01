@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.fa:before {
+	font-family: FontAwesome !important;
+}
+
+.icofont:before {
+	font-family: 'IcoFont' !important;
+}
+
 
 @keyframes bounce{
 	0%, 20%, 60%, 100%{
@@ -14,13 +22,6 @@
 		transform: translateY(-10px);
 	}
 	
-}
-.fa:before {
-	font-family: FontAwesome !important;
-}
-
-.icofont:before {
-	font-family: 'IcoFont' !important;
 }
 
 
