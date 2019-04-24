@@ -1,12 +1,4 @@
 @charset "UTF-8";
-.fa:before {
-	font-family: FontAwesome !important;
-}
-
-.icofont:before {
-	font-family: 'IcoFont' !important;
-}
-
 
 @keyframes bounce{
 	0%, 20%, 60%, 100%{
@@ -22,6 +14,13 @@
 		transform: translateY(-10px);
 	}
 	
+}
+.fa:before {
+	font-family: FontAwesome !important;
+}
+
+.icofont:before {
+	font-family: 'IcoFont' !important;
 }
 
 
@@ -125,12 +124,12 @@
 .text {
 	position: absolute;
 	font-size: 45px;
-	top: 250px;
+	top: 55%;
 	font-weight: bolder;
 	color: white;
 	font-family: 'Sree Krushnadevaraya', serif;
 	text-align: center;
-	margin-left: 450px;
+	margin-left: 33%;
 
 }
 
@@ -164,29 +163,8 @@ video {
 
 }
 
-.circle {
-	background-color: #aaa;
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	overflow: hidden;
-	position: absolute;
-	margin-top: 200px;
-	margin-left: 570px;
-}
-
-.circle img {
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	padding-top: 60px;
-	left: 17px;
-	max-width: 100%
-}
 
 /*Botao*/
-
-
 .btn-icon {
 	background-color: #808080;
  	color: #FFF;
@@ -213,6 +191,7 @@ video {
 .imagem img {
 	width: 100%;
 	height: auto;
+	
 
 }
 
@@ -220,4 +199,24 @@ video {
 	animation: bounce 1s;
 	
 }
+.circle {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 15%;
+margin-left: 44%;
+	
+	
+	
 
+}
+
+.circle img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+	
+}
