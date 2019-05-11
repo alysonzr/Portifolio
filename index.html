@@ -15,7 +15,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Sree+Krushnadevaraya" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/fontawesome/4.7.0/css/fontawesome.min.css">
-	<link rel="icon"  type="imagem.png" href="imgs/icon.png">
+	<link rel="icon" type="imagem.png" href="imgs/icon.png">
+	<link rel="stylesheet" href="print.css" type="text/css" media="all">
 </head>
 
 <body>
@@ -40,22 +41,23 @@
 		<div class="row">
 			<div id="in">
 				<div class="imagem ">
-					<div class="circle d-none d-sm-block;d-sm-none d-md-block">
-						<img src="imgs/ImagemPerfil.jpeg" class="d-none d-sm-block;d-sm-none d-md-block">
+					<div class="circle d-none d-lg-block d-xl-none;d-none d-xl-block">
+						<img src="imgs/ImagemPerfil.jpeg" class="d-none d-lg-block d-xl-none;d-none d-xl-block">
 					</div>
 					<img src="imgs/cc-bg-1.jpg" class="img-fluid" alt="Responsive image" style="display: flex; min-height: 350px;">
 					<div class="text d-none d-sm-block">Alyson Zancanaro Ramos</div>
+					<p id="txtMuted" class=" d-none d-sm-block" >Desenvolvedor Front-End</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="section">
+		<div class="section" id="btn">
 			<div class="container">
 				<div class="button-container">
-					<div class="btn-custom" style="text-align: center;">
-						<a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/alyson.zancanaro" rel="tooltip" target="_blank" title="Follow me on Facebook" style=" padding: 15px 25px;"><i class="fab fa-facebook-f"></i></a>
-						<a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/alyson-zancanaro-7a63b148/" rel="tooltip" target="_blank" title="Follow me on Linkedin" style=" padding: 15px 23px;"><i class="fab fa-linkedin"></i></a>
-						<a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/zancanaro_alyson/?hl=pt-br" rel="tooltip" target="_blank" title="Follow me on Instagram" style=" padding: 15px 23px;"><i class="fab fa-instagram"></i></a>
+					<div class="btn-custom" style="text-align: center;margin-top: 70px;">
+						<a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/alyson.zancanaro" rel="tooltip" target="_blank" title="Follow me on Facebook" style="padding: 16px 27px; "><i class="fab fa-facebook-f"></i></a>
+						<a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/alyson-zancanaro-7a63b148/" rel="tooltip" target="_blank" title="Follow me on Linkedin" ><i class="fab fa-linkedin"></i></a>
+						<a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/zancanaro_alyson/?hl=pt-br" rel="tooltip" target="_blank" title="Follow me on Instagram" ><i class="fab fa-instagram"></i></a>
 					</div>
 				</div>
 			</div>
@@ -69,14 +71,14 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-12">
 						<div class="card-body">
-							<div class="h3 -font-weight-bold "style="font-family: 'Sree Krushnadevaraya', serif;font-size: 32px;">Sobre</div>
+							<div class="h3 -font-weight-bold " id="tituloSobre">Sobre</div>
 							<p>Ola! Meu nome é Alyson Zancanaro Ramos. Estou cursando ensino superior em Analise e Desenvolvimento de Sistemas em Gravatai na Faculdade e Escola Tecnica QI.</p>
 							<p>Sou amante de tecnologia e inovaçoes, adoro programaçao web. Gosto de codificar porque é a carreira mais incrível do mundo, Ja dizia o grande Steve Jobs "Todos neste país deveriam aprender a programar um computador, pois isto ensina a pensar."</p>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12">
 						<div class="card-body">
-							<div class="h3 -font-weight-bold" style="font-family: 'Sree Krushnadevaraya', serif; font-size: 32px;">Informaçoes Basicas</div>
+							<div class="h3-font-weight-bold" style="font-family: 'Sree Krushnadevaraya', serif; font-size: 32px;">Informaçoes Basicas</div>
 							<div class="row">
 								<div class="col-sm-4"><strong class="text-uppercase">Idade:</strong></div>
 								<div class="col-sm-8">21</div>
@@ -103,7 +105,7 @@
 	<!--HABILIDADES  -->
 	<div class="container">
 		<div id="habilidades">
-			<div class="font-weight-bold" style="text-align: center; font-size: 35px;font-family: 'Sree Krushnadevaraya', serif;padding-top:-60px;padding-bottom:15px;">Habilidades</div>
+			<div class="font-weight-bold" id="tituloHabilidades">Habilidades</div>
 			<div class="card-body">
 				<div class="row">
 					<div class="col-md-6">
@@ -159,39 +161,57 @@
 
 	<!--PROJETOS  -->
 	<section id="p">
-		<div class="container" style="-webkit-box-shadow: 0px 0px 10px -2px rgba(3,5,4,1);-moz-box-shadow: 0px 0px 10px -2px rgba(3,5,4,1);box-shadow: 0px 0px 10px -2px rgba(3,5,4,1);">
-			<div class="font-weight-bold" id="titulo">Projetos Arduino</div>
-			<div class="videos col-sm">
-				<div class="box">
-					<video controls style="max-height: 250px;">
-						<source src="videos/video01.mp4" type="video/mp4">
-					</video>
-					<p><strong>Descriçao:</strong><br>Irrigaçao automatizada, feito com um arduino, sensor de umidade, valvula solenoide e um rele, sempre que a terra ficar seca o sensor manda um codigo que aciona a valvula mandando agua.</p>
+		<div class="container">
+			<div class="bordaProjetos">
+				<div class="font-weight-bold" id="titulo">Projetos Arduino</div>
+				<div class="row">
+					<div class="videos col-lg-12">
+						<video controls style="max-height: 250px;max-width: 382px;">
+							<source src="videos/video01.mp4" type="video/mp4">
+						</video>
+						<div class="paragrafo">
+							<p> <strong>Descriçao:</strong><br><strong>Irrigaçao automatizada</strong>, feito com um arduino, sensor de umidade, valvula solenoide e um rele, sempre que a terra ficar seca o sensor de umidade manda um codigo que aciona a valvula mandando agua, em 1 e 1 minuto o sensor verifica o solo, de acordo com a umidade ele fecha a valvula ou a mantem aberta.</p>
+						</div>
+					</div>
 				</div>
-				<div class="box">
-					<video controls style="max-height: 250px;">
-						<source src="videos/video02.mp4" type="video/mp4">
-					</video>
-					<p><strong>Descriçao:</strong><br>Acendendo lampada com palmas, feito com um sensor de som(KY-038), um rele e um arduino, quando o sensor detecta duas batidas ele aciona o rele que acende a lampada e vise-versa.</p>
+				<br>
+				<br>
+				<div class="row">
+					<div class="videos col-lg-12">
+						<video controls id="video02" style="max-height: 250px;max-width: 351px;min-width: 148px;">
+							<source src="videos/video02edi02.mp4" type="video/mp4">
+						</video>
+						<div class="paragrafo">
+							<p> <strong>Descriçao:</strong><br><strong>Automatizando lampada com sensor de som</strong>, feito com um sensor de som(KY-038), um rele e um arduino, quando o sensor detecta duas batidas ele manda um codigo que aciona o rele e acende a lampada e vise-versa.</p>
+						</div>
+					</div>
 				</div>
-				<div class="box">
-					<video controls style="max-height: 250px;">
-						<source src="videos/video03.mp4" type="video/mp4">
-					</video>
-					<p><strong>Descriçao:</strong><br>Sistema de automaçao residencial neste projeto usei um assistente pessoal(Jarvis), esse assistente eu conectei via wifi no Esp8266(NodeMCU) Quando eu mando o jarvis ligar a lampada ele manda pro Node e o node aciona um rele que liga a lampada sem nenhuma conhexao com o pc.</p>
+				<br>
+				<br>
+				<div class="row">
+					<div class="videos col-lg-12 ">
+						<video controls style="max-height: 250px;max-width: 382px;">
+							<source src="videos/video03.mp4" type="video/mp4">
+						</video>
+						<div class="paragrafo">
+							<p> <strong>Descriçao:</strong><br><strong>Sistema de automaçao residencial</strong> neste projeto usei um assistente pessoal(Jarvis), esse assistente eu conectei via wifi no Esp8266(NodeMCU) Quando eu mando o jarvis ligar a lampada ele manda pro Node e o node aciona um rele que liga a lampada sem nenhuma conexão com o pc, tudo via WIFI.</p>
+						</div>
+					</div>
+				</div>
+				<!--SITE-->
+				<div class="container">
+					<div class="row">
+						<div class="col-sm">
+							<div id="titulo">Sites</div>
+							<div class="text-center">
+								<img src="imgs/siteBootstrap.png" class="img-fluid" alt="Responsive image">
+							</div>
+							<h4>Bootstrap 4</h4>
+							<a class="btn btn-success" target="_blank" href="https://alysonzr.github.io/SiteBootstrap/" role="button">Verifique o Site!</a>
+						</div>
+					</div>
 				</div>
 			</div>
-		
-			<div class="row">
-			<div class="col-sm">
-				<div id="titulo">Sites</div>
-				<div class="text-center">
-				<img src="imgs/siteBootstrap.png" class="img-fluid" alt="Responsive image">
-				</div>
-				<h4 >Bootstrap 4</h4>
-				<a class="btn btn-success" target="_blank" href="https://alysonzr.github.io/SiteBootstrap/" role="button">Verifique o Site!</a>
-			</div>
-		</div>
 		</div>
 	</section>
 	<br>
@@ -200,9 +220,9 @@
 	<!--CONTATO  -->
 	<section id="cont">
 		<div class="container">
-			<div class="borda col-md-12 col-sm-12" >
+			<div class="borda col-md-12 col-sm-12">
 				<div class="c">
-					<div class="font-weight-bold" style="text-align: center; font-size: 35px;margin-top: 2%; padding-top:15px; margin-bottom: 15px;font-family: 'Sree Krushnadevaraya', serif;">Contato</div>
+					<div class="font-weight-bold" id="tituloContato">Contato</div>
 					<form name="meu_formulario" method="post" action="#in">
 						<div class="row " style="padding-top: 1%;">
 							<div class="col-md-6 offset-md-3" style="padding: 5px; ">
@@ -237,7 +257,6 @@
 									<textarea class="form-control" rows="4" placeholder="Enter your message here"></textarea>
 								</div>
 								<button type="submit" name="submit" class="btn btn-success" style="margin-left: 50%; margin-top: 25px; margin-bottom: 20px;">Submit</button>
-								
 							</div>
 						</div>
 					</form>
@@ -245,16 +264,16 @@
 			</div>
 		</div>
 		<div class="container">
-		<footer id="rodape" class="py-5 bg-success text-white">
-			<div class="row text-center">
-			<div class="col-md-6 ml-auto">
-				<p class="lead">Copyright Alyson Zancanaro&copy; 2018</p>
+			<footer id="rodape" class="py-5 bg-success text-white">
+				<div class="row text-center">
+					<div class="col-md-6 ml-auto">
+						<p class="lead">Copyright Alyson Zancanaro&copy; 2018</p>
+					</div>
 				</div>
-			</div>
-		</footer>
-	</div>
+			</footer>
+		</div>
 	</section>
-	
+
 	<script src="nodemodules/jquery/dist/jquery.js"></script>
 	<script src="nodemodules/popper.js/dist/umd/popper.js"></script>
 	<script src="nodemodules/bootstrap/dist/js/bootstrap.js"></script>
@@ -274,7 +293,7 @@
 
 			$('#projeto').click(function() {
 				$('html, body').animate({
-					scrollTop: $('#p').offset().top - 80
+					scrollTop: $('#p').offset().top + 50
 				}, 500);
 			});
 
@@ -288,11 +307,12 @@
 			$('#ini').click(function() {
 				$('html, body').animate({
 					scrollTop: $('#in').offset().top
-				}, 500); 
+				}, 500);
 			});
 
 		});
 
 	</script>
 </body>
+
 </html>
