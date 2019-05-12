@@ -331,8 +331,9 @@ video {
 
 	@media (max-width: 410px) and (min-width: 315px) {
 		.paragrafo {
-			    margin-top: 112%;
-    margin-left: -65%;
+			margin-top: 110%;
+			margin-left: -60%;
+			text-align: -webkit-match-parent;
 		}
 
 
